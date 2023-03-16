@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "580ed266-a20e-4af3-97b5-f8427f46f285",
+		"name": "FulhausBE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26386775"
+	},
+	"item": [
+		{
+			"name": "GET- Acronyms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/acronym?search=&limit=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"acronym"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": ""
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				},
+				"description": "○ returns a list of acronyms, pagination using query parameters\n○ response headers indicate if there are more results\n○ returns all acronyms that fuzzy match against :search"
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"_id\": \"\",\n    \"acronym\": \"Random ID\",\n    \"definition\": \"STRIIIING\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/acronym",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"acronym"
+					]
+				},
+				"description": "○ receives an acronym and definition string\n○ adds the acronym definition to the db"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"\",\n    \"acronym\": \"GIP\",\n    \"definition\": \"Given ID Patched\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/acronym/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"acronym",
+						""
+					]
+				},
+				"description": "● PATCH /acronym/:acronymID\n○ updates the acronym for :acronymID"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/acronym/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"acronym",
+						""
+					]
+				},
+				"description": "● DELETE /acronym/:acronymID\n○ deletes the acronym for :acronymID"
+			},
+			"response": []
+		}
+	]
+}
