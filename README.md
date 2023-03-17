@@ -1,6 +1,6 @@
 # Backend Acronym APIs
 <br>
-*Graphical User Interface for lsusb - ElectronJS.*
+Rest API for Acronyms.
 <br> 
 
 ## File structure :
