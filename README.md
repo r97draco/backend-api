@@ -10,7 +10,6 @@
 4. controllers/method.js contains all the function and methods for Database query and manipulation.
 
 ## How to start
-<br>
 1. Clone or download using link: https://github.com/r97draco/backend-api
 2. Run following command to install node modules in the root directory of Project.
 <br>```npm install```
@@ -18,7 +17,6 @@
 <br>```node server.js```
 
 ### To run in development mode we can start server using nodemon
-<br>
 4. Run following in terminal to start the server on localhost:3000 using nodemon
 <br>```npm run dev```
 
