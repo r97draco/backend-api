@@ -1,7 +1,5 @@
 # Backend Acronym APIs
-<br>
 Rest API for Acronyms.
-<br> 
 
 ## File structure :
 1. server.js is the root file which will start the server.
@@ -21,9 +19,7 @@ Rest API for Acronyms.
 <br>```npm run dev```
 
 ### Postman file for testing
-<br>
-Import it as a file the Postman App.
-- postman-file/FulhausBE.postman_collection.json
+Import it as a file the Postman App.<br> postman-file/FulhausBE.postman_collection.json
 
 ## Dependencies
 - express@4.18.2
