@@ -9,6 +9,7 @@ Rest API for Acronyms.
 
 ## How to start
 1. Clone or download using link: https://github.com/r97draco/backend-api
+<br>```git clone https://github.com/r97draco/backend-api```
 2. Run following command to install node modules in the root directory of Project.
 <br>```npm install```
 3. Run following in terminal to start the server on localhost:3000
